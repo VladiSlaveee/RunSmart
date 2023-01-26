@@ -1,0 +1,53 @@
+@media (max-width: 605px) {
+    .header {
+        flex-wrap: wrap;
+        :nth-child(1) {
+            order: 1;
+            
+        }
+        :nth-child(2) {
+            order: 3;
+            margin: 10px 0 0 45px;
+            
+        }
+        :nth-child(3) {
+            order: 2;
+            margin: 10px 10px 0 0;
+        }
+        
+    }
+    
+}
+@media (max-width: 458px) {
+    .header {
+        :nth-child(1) {
+            order: 1;
+            
+        }
+        :nth-child(2) {
+            order: 2;
+            margin: 10px 0 0 0;
+        }
+        :nth-child(3) {
+            order: 3;
+            margin: 10px 0 0 0;
+        }
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        a {
+            margin: 0 auto;
+        }
+        .button{
+            width: 250px;
+        }
+    }
+    .benefits__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .promo__icons {
+        justify-content: center;
+    }
+}

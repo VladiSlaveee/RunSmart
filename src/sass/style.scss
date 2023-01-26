@@ -1,6 +1,7 @@
 @import 'base/variables';
 * {
     font-family: 'MuseoModerno', sans-serif;
+    box-sizing: border-box;
 }
 .container {
     max-width: 950px;
@@ -9,3 +10,5 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
+@import 'blocks/benefits';
+@import 'blocks/media';
