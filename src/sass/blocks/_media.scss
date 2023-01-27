@@ -31,6 +31,9 @@
         :nth-child(3) {
             order: 3;
             margin: 10px 0 0 0;
+            .button {
+                height: 50px;
+            }
         }
         flex-wrap: nowrap;
         flex-direction: column;
@@ -47,7 +50,23 @@
         justify-content: center;
         align-items: center;
     }
+    .promo {
+        &__wrapper {
+            align-items: center;
+            width: 100%;
+        }
+    }
     .promo__icons {
         justify-content: center;
+        width: 100%;
     }
+    .promo__header {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .promo__subheader {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
 }
