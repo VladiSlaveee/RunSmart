@@ -5,7 +5,10 @@
         width: 750px;
         margin: 0 auto;
     }
-    .slick-prev {
+    .container {
+        position: relative;
+    }
+    .prev {
         position: absolute;
         left: -66px;
         top: 50%;
@@ -14,7 +17,7 @@
         background-color: white;
 
     }
-    .slick-next {
+    .next {
         position: absolute;
         right: -66px;
         top: 50%;
@@ -22,4 +25,24 @@
         border: none;
         background-color: white;
     }
-}
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+
+    
+    // .slick-dots {
+    //     display: flex;
+    //     justify-content: space-around;
+    //     margin-top: 50px;
+    //     list-style-type: square;
+    //     button {
+    //         display: none;
+    //     }
+        
+    // }
+
+}   
