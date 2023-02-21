@@ -4,7 +4,7 @@
     height: 32px;
     left: 0px;
     top: 0px;
-    background: $main-color;
+    background-color: $main-color;
     border-radius: 5px;
     font-weight: 500;
     font-size: 12px;
@@ -25,5 +25,10 @@
     }
     &:hover {
         background: #000;
+    }
+    &_mini {
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
     }
 }
