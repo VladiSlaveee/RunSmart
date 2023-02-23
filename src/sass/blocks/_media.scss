@@ -1,7 +1,7 @@
 @media (max-width: 605px) {
     .footer {
-        &__info {
-            width: 100% !important;
+        .footer__info {
+            width: 100%;
         }
     }
     .catalog {
@@ -69,6 +69,15 @@
     
 }
 @media (max-width: 458px) {
+    .modal {
+        .modal__close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 61px;
+            line-height: 21px;
+        }
+    } 
     .header {
         :nth-child(1) {
             order: 1;
@@ -123,4 +132,5 @@
             width: 100%;
         }
     }
+       
 }
