@@ -1,5 +1,5 @@
 // $(document).ready(function(){
-//     $('.carousel__inner').slick({
+//     $('.carousel__inner').slick({                                 - вариант реализации слайдера с помошью библиотеки slick
 //         speed: 1200,
 //         adaptiveHeight: true,
 //         prevArrow:  '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
@@ -17,7 +17,7 @@
 //   });
 
 
-const slider = tns({
+const slider = tns({                            //- tiny слайдер
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
@@ -43,7 +43,7 @@ $(document).ready(function(){
       .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
   });
 
-  // $('.catalog-item__link').each(function(i) {
+  // $('.catalog-item__link').each(function(i) {                                         - переключение класса active без функции 
   //   $(this).on('click', function(e) {
   //     e.preventDefault();
   //     $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
