@@ -17,7 +17,7 @@
 //   });
 
 
-const slider = tns({                                                                      //- tiny слайдер
+const slider = tns({                                                                      //- tiny-слайдер
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
