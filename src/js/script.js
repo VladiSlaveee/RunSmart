@@ -17,7 +17,7 @@
 //   });
 
 
-const slider = tns({                            //- tiny слайдер
+const slider = tns({                                                                      //- tiny слайдер
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
@@ -36,14 +36,14 @@ const slider = tns({                            //- tiny слайдер
     slider.goTo('next');
   });
 
-$(document).ready(function(){
+$(document).ready(function(){                                                            //- переключение класса active (табы)
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
     $(this)
       .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
       .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
   });
 
-  // $('.catalog-item__link').each(function(i) {                                         - переключение класса active без функции 
+  // $('.catalog-item__link').each(function(i) {                                         - переключение класса active без функции (при нажатии на ссылку подробнее/назад в карточке товара в каталоге)
   //   $(this).on('click', function(e) {
   //     e.preventDefault();
   //     $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
@@ -59,7 +59,7 @@ $(document).ready(function(){
   //   })
   // })
 
-  function toggleSlide(item) {
+  function toggleSlide(item) {                                                          //переключение класса active с использованием функции
     $(item).each(function(i) {
       $(this).on('click', function(e) {
         e.preventDefault();
@@ -74,20 +74,20 @@ $(document).ready(function(){
 
   // Modal
 
-  $('[data-modal=consultation]').on('click', function() {
+  $('[data-modal=consultation]').on('click', function() {                               //показать 1-ую модалку
     $('.overlay, #consultation').fadeIn('slow');
   });
-  $('.modal__close').on('click', function() {
+  $('.modal__close').on('click', function() {                                           //при нажатии на крестик скрыть все модалки и подложку
     $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
   })
-  $('.button_mini').each(function(i) {
+  $('.button_mini').each(function(i) {                                                  //показать 2-ую модалку + текст у .modal__descr заменить на .catalog-item__subtitle (подтянуть подзаголовок у карточки товара в модалку)
     $(this).on('click', function() {
       $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
       $('.overlay, #order').fadeIn('slow');
     })
   });
 
-  function validationForms(form) {
+  function validationForms(form) {                                                      // валидация форм
     $(form).validate({
       rules: {
         name: "required",
@@ -112,14 +112,14 @@ $(document).ready(function(){
   validationForms('#consultation form');
   validationForms('#order form');
 
-  $('form').submit(function(e) {
+  $('form').submit(function(e) {                                                        //отправка писем с сайта
     e.preventDefault();
 
-    if (!$(this).valid()) {
+    if (!$(this).valid()) {                                                             //если форма не провалидирована, код не выполняется
       return;
     }
 
-    $.ajax({
+    $.ajax({                                                                            //настройки ajax + показать 3-ую модалку
       type: "POST",
       url: "mailer/smart.php",
       data: $(this).serialize()
