@@ -141,5 +141,8 @@ $(document).ready(function(){                                                   
     } else {
       $('.pageup').fadeOut();
     }
-  })
+  });
+
+
+  new WOW().init();
 });

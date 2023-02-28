@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script src="https://kit.fontawesome.com/049c13c5ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -56,17 +57,17 @@
             </h2>
             <div class="benefits__wrapper">
                 <div class="benefits__item">
-                    <img src="img/cup.png" alt="cup">
+                    <img src="img/cup.png" alt="cup" class="benefits__icon">
                     <div class="benefits__subtitle">Делимся опытом</div>
                     <div class="benefits__descr">Наши сотрудники всегда готовы поделиться своим опытом,<br> так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="benefits__item">
-                    <img src="img/heart.png" alt="heart">
+                    <img src="img/heart.png" alt="heart" class="benefits__icon benefits__icon_animated">
                     <div class="benefits__subtitle">Заботимся о здоровье</div>
                     <div class="benefits__descr">Мы работаем для того,<br> чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
                 <div class="benefits__item">
-                    <img src="img/shoe.png" alt="shoe">
+                    <img src="img/shoe.png" alt="shoe" class="benefits__icon">
                     <div class="benefits__subtitle">Учим бегать</div>
                     <div class="benefits__descr">Помогаем с обучением<br> правильной технике бега!<br> Дружим с крупнейшей школой бега в России - <span>I LOVE RUNNING.</span></div>
                 </div>
@@ -356,7 +357,7 @@
     <section class="revie">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="revie-item">
+            <div class="revie-item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.5s">
                 <img src="img/photo_1.png" alt="1">
                 <div class="revie-item__wrapper">
                     <div class="revie-item__title">Ирина Иванченко </div>
@@ -365,7 +366,7 @@
                         <br><br>Спасибо, RunSmart! </div>
                 </div>
             </div>
-            <div class="revie-item">
+            <div class="revie-item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.5s">
                 <img src="img/photo_2.png" alt="2">
                 <div class="revie-item__wrapper">
                     <div class="revie-item__title">Иван Сёмочкин</div>
@@ -373,7 +374,7 @@
                     <div class="revie-item__descr">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе<br> делал. <br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели<br> первую тренировку, научили пользоваться новым гаджетом. Также объяснили<br> основы анатомии, составили план тренировок на месяц вперёд.<br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                 </div>
             </div>
-            <div class="revie-item">
+            <div class="revie-item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.5s">
                 <img src="img/photo_3.png" alt="3">
                 <div class="revie-item__wrapper">
                     <div class="revie-item__title">Юлия Дашкина</div>
@@ -434,6 +435,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
